@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZChat</string>
+    <string name="txt_welcome">Welcome !</string>
+    <string name="home">Home</string>
+    <string name="go">Go</string>
+
+
+</resources>
