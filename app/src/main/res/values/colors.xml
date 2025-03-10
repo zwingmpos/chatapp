@@ -10,4 +10,7 @@
     <color name="grey">#a9a9a9</color>
     <color name="green">#5ced73</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="light_sky">#EFF8FF</color>
+    <color name="sky">#DEE9F1</color>
+    <color name="btn_txt_color">#EDF4FA</color>
 </resources>
