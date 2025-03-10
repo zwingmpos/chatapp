@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPrescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llPreView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:maxWidth="@dimen/_200sdp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:paddingVertical="@dimen/_10ssp"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:background="@drawable/bg_lt_sky_200"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvPrescriptionFileName"
+                    style="@style/TVRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="Hello How are You? "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivDrPrescriptionImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ivDrPrescriptionImage"
+                    app:layout_constraintStart_toStartOf="@+id/ivDrPrescriptionImage" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTimePre"
+                style="@style/TVRegular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="06:30 Pm"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llPreView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDrMessage"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivImageMessage"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_medicine"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CornerShape6" />
+
+
+            <TextView
+                android:id="@+id/txtChat"
+                style="@style/TVRegular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/bg_lt_sky_200"
+                android:maxWidth="@dimen/_200sdp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivImageMessage"
+                tools:text="lorem_ipsum_dolor_sit_amet_nconsetetur_sadipscing_elitr_sed" />
+
+            <TextView
+                android:id="@+id/tvConsultDetails"
+                style="@style/TVRegular"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/bg_lt_sky_200"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:paddingVertical="10dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChat"
+                tools:text="lorem_ipsum_dolor_sit_amet_nconsetetur_sadipscing_elitr_sed" />
+
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/TVRegular"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Today 10:00 Am"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvConsultDetails" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
